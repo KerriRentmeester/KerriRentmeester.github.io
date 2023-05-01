@@ -6,9 +6,9 @@ Professional Portfolio
 
 Included are examples of my Javascript coding capabilities. Items include projects I created from my MIT bootcamp "Professional Certificate in Coding: Full Stack Development with MERN" and other projects I did on my own time.
 
-    - ### **Features**: 
+### **Features**: 
 
-            - coming soon
+- coming soon
 
 ## **Installation**: 
 
@@ -26,6 +26,6 @@ Please contact me via email at krentmeester@uwalumni.com
 
 coming soon: future fixes or improvements planned for current projects.
 
-## **License** (description of how my open source projects are licensed): 
+## **License**: 
 
 Anything you find here is free and open source. You can use it for commercial projects, open source projects, or anything your heart desires.
