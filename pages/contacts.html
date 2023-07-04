@@ -1,48 +1,77 @@
 <!DOCTYPE html>
-<html   lang="en">
+<html lang="en">
 
 <head>
     <title>Contact</title>
-    <link rel="stylesheet" href="../styles.css" />
-    <meta name="author" content="Kerri Rentmeester" />
-    <meta charset="utf-8" />
-    <meta name="description" content="Professional portfoliio of Kerri Rentmeester" />
-    <meta name=“keywords”  content="contact me, software developer, portfolio, front end developer, back end developer, full stack developer, MERN stack developer, web developer" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-       
-<body>
+    <meta name="author" content="Kerri Rentmeester"/>
+    <meta charset="utf-8"/>
+    <meta name="description" content="Professional portfoliio of Kerri Rentmeester"/>
+    <meta name=“keywords”  content="contact me, software developer, portfolio, front end developer, back end developer, full stack developer, MERN stack developer, web developer"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- Add custom css style sheet -->
+    <link rel="stylesheet" href="../styles.css"/>
+    <!-- Add Bootstrap css framework -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Add social media icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+      
+  
+<body class="d-flex h-100 text-bg-dark">
     <div class="wrapper">
         <div class="header">
-            <div class="nav">
-                <ul>
-                    <li><a href="../index.html"><b>KERRI RENTMEESTER</b></a></li>
-                    <li><a href="contacts.html"><b>CONTACT</b></a></li>
-                    <li><a href="projects.html"><b>PROJECTS</b></a></li>
+        <nav class="navbar navbar-expand-lg" >
+            <div class="container-fluid" id="navbarContainer">
+            <a class="navbar-brand" href="../index.html">Kerri Rentmeester</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown" id="navbarNavItemDropdown">
+                    <a class="nav-link dropdown-toggle" href="projects.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="eye/index.html">Watching Eyes</a></li>
+                    <li><a class="dropdown-item" href="pacMen/index.html">PacMan</a></li>
+                    <li><a class="dropdown-item" href="busTracker/index.html">Real Time Bus Tracker</a></li>
+                    </ul>
+                </li>
                 </ul>
             </div>
-        </div>    
-        
-        <h1>Contact Me</h1>
-        
-        <div class="textBoxCharcoal">
-            <p>Kerri Rentmeester <br> Sister Bay, WI <br> krentmeester@uwalumni.com <br> https://www.linkedin.com/in/kerri-rentmeester/ <br> https://github.com/KerriRentmeester <br> 
-            </p>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item" id="navbarNavItem">
+                    <a class="nav-link" href="contacts.html">Contact</a>
+                </li>
+                <li class="nav-item" id="navbarNavItem">
+                    <a href="https://github.com/KerriRentmeester" class="fa fa-github"></a>
+                </li>
+                <li class="nav-item" id="navbarNavItem">
+                    <a href="https://www.linkedin.com/in/kerri-rentmeester/" class="fa fa-linkedin"></a>
+                </li>
+                </ul>
+            
+            </div>
+        </nav>
         </div>
 
-        <div class="textBoxCharcoal">
-            <p>I am willing to relocate for the right position.</p>
-        </div>
         
-        <div class="footer">
-            <p>&copy; This page created by Kerri Rentmeester  |  Copyright 2023 <br> All rights reserved.
-            </p>
-                <nav>
-                    <a href="#">Home</a>
-                    <a href="#">Projects</a>
-                    <a href="#">Contact</a>
-                </nav>
-        </div>
+            <div class="container-fluid" id="content7Container">
+                <h1>Contact Me</h1> 
+            </div>
+
+            <div class="container-fluid" id="content8Container">
+                <p>Kerri Rentmeester <br> Sister Bay, WI <br> krentmeester@uwalumni.com <br><br> <a href="https://www.linkedin.com/in/kerri-rentmeester/">LinkedIn</a> <a href="https://github.com/KerriRentmeester">GitHub</a> <br><br><br> 
+                 I am willing to relocate for the right position.</p>
+            </div>
+             
+        <nav class="footer footer-expand-lg" >
+            <div class="container-fluid" id="footerContainer">
+                <p>&copy; This page created by Kerri Rentmeester  |  Copyright 2023 <br> All rights reserved.
+                </p>
+            </div>
+        </nav>
+
     </div>
 </body>
 </html>
