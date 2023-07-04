@@ -1,150 +1,34 @@
-body{
-  background-color: #BDC3C7;
-  font-size: 16px;
-  text-align: center;
-  display: flex;
-  justify-content: center;  /* centers content horizontally */
-  height: 100vh;  /* sets the height of the body to the full viewport height, ensuring the content is centered vertically. */
-    /*I want to use a photo of me as the background, but it isn't working
-    background-image: url('blkWhiteProfilePic.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-    background-attachment: fixed;*/
-}
-
-h1{
-  font-size: 40px;
-  text-align: center;
-  color: white;
-}
-
-h2{
-  font-size: 30px;
-  text-align: left;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-h3{
-  font-size: 20px;
-  text-align: left;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-h4{
-  font-size: 18px;
-  text-align: center;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-p{
-  font-size: 16px;
-  text-align: left;
-  color: #3284ba;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-ul{
-  font-size: 16px;
-  text-align: left;
-  color: #3284ba;
-}
-
-ol{
-  font-size: 16px;
-  text-align: left;
-  color: #3284ba;
-}
-
-.textBoxCharcoal {
-  display: block;
-  font-size: 16px;
-  color: #3284ba;
-  background-color: #2F3737; /* Charcoal gray */
-  padding: 20px;
-  margin: 20px;
-}
-
-.textBoxBlack {
-  display: block;
-  font-size: 16px;
-  color: #3284ba;
-  background-color: black;
-  padding: 20px;
-  margin: 20px;
-}
-
-.textBoxGray {
-  display: block;
-  font-size: 16px;
-  color: #3284ba;
-  background-color: rgb(118, 125, 133);
-  padding: 10px;
-  margin: 10px;
-}
-
-.content {
-  order: 3;
-  margin-top: -5%;  /* Adjust spacing above div */
-  margin-bottom: 0%; /* Adjust spacing below div */
-}
-
-.wrapper {  /*contains the grid */
-  display: flex;
-  flex-direction: column;
-}
-
-.header {
+/* Nav bar styling starts */
+#navbarContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
   background-color: #424949;
   padding: 10px;
-  text-align: center;
-  width: 100%; 
-  height: 100%;
-}
-  
-.header p {
-  color: #424949;
-  text-align: center;
-  order: 1;
 }
 
-.nav {
-  background-color: #f2f2f2;
-  padding: 10px;
-  justify-content: center;
-  display: inline-block;
-  width: 100%; 
-  height: 60px;
+.navbar a:hover {
+  background-color: #ddd;
 }
 
-.nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+.navbar a {
+  color: white;
+}
+/* Align HOME link to the left */
+.navbar-brand {  /* not working */
+  float: left;
 }
 
-.nav ul li {
+/* Align PROJECTS (drop down) link to the right */
+#navbarNavDropdown {  /* not working */
   float: right;
 }
 
-.nav ul li a {
-  display: block;
-  color: #424949;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.nav ul li a:hover {
-  background-color: #ddd;
+/* Align CONTACT & Social Media links to the right */
+#navbarNavItem { 
+  float: right;
 }
 
 .fa {
@@ -161,66 +45,196 @@ ol{
   color: white;
 }
 
-/* Align HOME link to the left */
-.nav ul li:first-child {
+.fa-github {
+  background: black;
+  color: white;
+}
+/* Nav bar styling ends */
+
+
+
+/* Body content styling starts */
+body {
+  background-color: #BDC3C7;  /*not working*/
+  font-size: 16px;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+p{
+  font-size: 16px;
+  text-align: left;
+  color: #3284ba;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+}
+
+.wrapper {  /*contains the grid */
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  margin-bottom: 10%; /* Adjust spacing below div */
+}
+
+#content3Container {  /* not working */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #2F3737; /* Charcoal gray */
+  padding: 20px;
+  margin: 20px;
+}
+
+.profile-image {  
+  float: left; 
+  margin-right: 20px;
+}
+
+#content6Container {
+  display: block;
+  font-size: 16px;
+  color: #3284ba;
+  background-color: #2F3737; /* Charcoal gray */
+  padding: 20px;
+  margin: 20px;
+}
+
+#content7Container {  /* contacts page - contact me */
+  display: block;
+  padding: 20px;
+  margin-top: 15%;  /* Adjust spacing above div */
+  margin-bottom: 5%; /* Adjust spacing below div */
+}
+
+#content8Container p {  /* Contacts page - content */
+  text-align: center;
+  font-size: 18px;
+}
+
+#content8Container a {
+  text-align: center;
+  color: white;
+}
+
+#content8Container a:hover {
+  background-color: #ddd;
+}
+
+#content8Container {
+  display: block;
+  font-size: 16px;
+  color: #3284ba;
+  padding: 20px;
+  margin-bottom: 5%; /* Adjust spacing below div */
+}
+
+#content9Container {  /* Projects page - intro */
+  display: block;
+  padding: 20px; 
+  margin-top: 5%;  /* Adjust spacing above div */
+  margin-bottom: 5%; /* Adjust spacing below div */
+}
+
+#content9Container p {  /* Projects page - intro */
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#content10Container {  /* Projects pg - cards */
+  display: block;
+  padding: 20px;
+  margin-bottom: 5%; /* Adjust spacing below div */
+}
+
+
+/* Projects Card Styling begins */
+.card {
+  border-radius: 10%;
+  text-align: center;
+  padding: 10px;
+  background-color: #dbbfe8;
+  box-shadow: 1px 1px 5px 3px #ba79f8b7;;
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 25px 10px #ba79f8b7;
+}
+
+.col {  /* Float 3 columns side by side */
   float: left;
+  width: 33.33%;
+  padding: 10 10px;
 }
 
-/* Align PROJECTS and CONTACT links to the right */
-.nav ul li:last-child{
-  float: right;
+.row:after {  /* Clear floats after the columns */
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.video-container {
-  order: 2;
+@media screen and (max-width: 600px) { /* Responsive columns */
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+/* Projects Card Styling ends */
+
+
+/* Body content styling ends */
+
+
+
+/* Video content styling begins */
+#videoContainer {
   display: flex;
   width: 100%;
-  height: 100%;
-  margin-top: 5%;  /* Adjust spacing above div */
+  height: auto;
+  margin-top: 15%;  /* Adjust spacing above div */
   margin-bottom: 5%; /* Adjust spacing below div */
   justify-content: center;
 }
 
-.video-container iframe {
+#videoContainer iframe {
   width: 560px;  /* 16:9 aspect ratio for vids */
   height: 315px;  /* 16:9 aspect ratio for vids */
 }
+/* Video content styling ends */
 
-.footer {
-  background-color: #424949;
-  padding: 10px;
-  text-align: center;
-  order: 4;
-}
-
-.footer p {  /* footer text */
-  font-size: 16px;
-  color: #f2f2f2;
-  text-align: center;
-}
-
-.footer nav a {  /* footer nav bar text */
-  margin: 0 10px;
-  color: #3284ba;
-  text-decoration: none;
-}
 
 
 /* IMAGE GALLERY Styling begins */
-div.gallery {
+.gallery {
   border: 1px solid #ccc;
 }
 
-div.gallery:hover {
+.gallery:hover {
   border: 1px solid #777;
 }
 
-div.gallery img {
+.gallery img {
   width: 100%;
   height: auto;
+  display: block;  /* centers img w/in card */
+  margin: 0 auto;  /* centers img w/in card */
 }
 
-div.desc {
+.desc {
   padding: 15px;
   text-align: center;
 }
@@ -256,95 +270,25 @@ div.desc {
 /* IMAGE GALLERY Styling ends */
 
 
-/* Projects Card Styling begins */
-.allCards {
-  border-radius: 10%;
-  text-align: center;
+
+/* Footer styling starts */
+#footerContainer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #424949;
   padding: 10px;
+  text-align: center;
 }
 
-.card1 {
-  height: 400px;
-  background-color: #dbbfe8;
-  box-shadow: 1px 1px 5px 3px #ba79f8b7;;
-  transition: box-shadow 0.5s ease-in-out;
+#footerContainer p {  /* footer text */
+  font-size: 14px;
+  color: #f2f2f2;
+  text-align: center;
 }
+/* Footer styling ends */
 
-.card1:hover {
-  box-shadow: 0px 0px 25px 10px #ba79f8b7;
-}
 
-.card2 {
-  height: 400px;
-  background-color: #dbbfe8;
-  color: white;
-  box-shadow: 1px 1px 5px 3px #ba79f8b7;;
-  transition: box-shadow 0.5s ease-in-out;
-}
-
-.card2:hover {
-  box-shadow: 0px 0px 25px 10px #ba79f8b7;
-}
-
-.card3 {
-  height: 400px;
-  background-color: #dbbfe8;
-  color: white;
-  box-shadow: 1px 1px 5px 3px #ba79f8b7;
-  transition: box-shadow 0.5s ease-in-out;
-}
-
-.card3:hover {
-  box-shadow: 0px 0px 25px 10px #ba79f8b7;
-}
-
-.col {  /* Float 3 columns side by side */
-  float: left;
-  width: 33.33%;
-  padding: 0 10px;
-}
-
-.row {  /* Remove extra left and right margins, due to padding */
-  margin: 0 -5px;
-}  
-
-.row:after {  /* Clear floats after the columns */
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media screen and (max-width: 600px) { /* Responsive columns */
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-/* Projects Card Styling ends */
-
-/* Links styling begins */
-a:link {
-  color: hotpink;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:visited {
-  color: pink;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:hover {
-  color: hotpink;
-  background-color: #ddd;
-  text-decoration: none;
-}
-
-a:active {
-  color: pink;
-  background-color: #ddd;
-  text-decoration: underline;
-}
-/* Links styling ends */
+/*  */
