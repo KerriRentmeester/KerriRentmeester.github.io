@@ -16,19 +16,18 @@
 .navbar a {
   color: white;
 }
-/* Align HOME link to the left */
-.navbar-brand {  /* not working */
-  float: left;
+
+.nav-item.dropdown:hover .dropdown-menu {  /* makes dropdown menu appear when hovering over */
+  display: block;
+  background-color: #ddd;
 }
 
-/* Align PROJECTS (drop down) link to the right */
-#navbarNavDropdown {  /* not working */
-  float: right;
+.dropdown-menu {
+  display: none;
 }
 
-/* Align CONTACT & Social Media links to the right */
-#navbarNavItem { 
-  float: right;
+.dropdown-menu a {
+  color: #007bb5;
 }
 
 .fa {
