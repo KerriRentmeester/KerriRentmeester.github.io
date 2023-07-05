@@ -1,0 +1,13 @@
+/* Style sheet for Real Time Bus Tracker project */
+/* Most of this code was borrowed from MIT xPro via Emeritus Professional Certificate in Coding: Full Stack Development with MERN Bootcamp Module 9 course work */
+body {
+  margin: 0;  
+  padding: 0;
+  }
+  
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
