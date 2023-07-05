@@ -1,0 +1,39 @@
+/* PacMen css file for PacMen project */
+body {
+    background-color: black;
+  }
+
+h1{
+    font-size: 80px;
+    text-align: center;
+    color: yellow;
+    font-family: 'Garamond', sans-serif;
+}
+
+h2{
+  font-size: 24px;
+  text-align: center;
+  color: yellow;
+  font-family: 'Garamond', sans-serif;
+}
+
+/* Button Styling begins */
+.button-container button {
+    background-color: yellow;
+    border: none;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh; /* Adjust the height based on your needs */
+}
+/* Button Styling ends */
